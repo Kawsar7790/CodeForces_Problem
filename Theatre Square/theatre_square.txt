@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    long long int n , m ,a ,value , len , bre;
+    scanf("%lld",&n);
+    scanf("%lld",&m);
+    scanf("%lld",&a);
+
+
+    len =n/a;
+    if (n%a !=0)
+    {
+        len++;
+    }
+    bre =m/a;
+    if (m%a !=0)
+    {
+        bre++;
+    }
+
+
+    value=len*bre;
+
+    printf( "%lld",value);
+    return 0;
+}

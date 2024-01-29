@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int p,v,t ,c=0 ,n ,sum=0;
+    scanf("%d" , &n);
+    for (int i = 1; n >= i; ++i)
+    {
+        scanf("%d" , &p);
+        scanf("%d" , &v);
+        scanf("%d" , &t);
+         sum = p+v+t;
+        if( sum > 1)
+        {
+            c +=1;
+        }
+    }
+    printf("Solved Problems %d\n",c);
+    return 0;
+}

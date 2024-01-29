@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int n ,X=0;
+    scanf("%d", &n);
+
+    for(int i=0 ; i<n ;i++){
+        char string[4];
+        scanf("%s", string);
+        int j=0;
+        while(string[j] !='\0'){
+                if( string[j] == '+'){
+
+                    X++;
+                    break;
+                }
+                else if(string[j] == '-') {
+                    X--;
+                    break;
+                }
+                else {
+                    X=X;
+                }
+            j++;
+        }
+
+
+    }
+
+
+    printf("%d\n", X);
+    return 0;
+}

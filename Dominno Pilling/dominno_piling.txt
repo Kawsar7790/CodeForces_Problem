@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int m,n ,given_dominno=2,dominno_total;
+    scanf(" %d %d" ,&m,&n);
+    dominno_total = ((m*n)/given_dominno);
+    printf("%d",dominno_total);
+
+}
